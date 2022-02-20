@@ -39,7 +39,7 @@ public class Frame {
 		Thread.sleep(5000);
 		
 		frame.getContentPane().removeAll();
-		frame.getContentPane().add(new BeatMap(6));
+		frame.getContentPane().add(new BeatMap(1));
 		frame.getContentPane().revalidate();
 		
 	}

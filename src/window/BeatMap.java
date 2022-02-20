@@ -212,6 +212,11 @@ public class BeatMap extends JPanel implements Runnable {
 			Thread.sleep(3000);
 			if(mapNum < FINAL_MAP)
 				Frame.next(new BeatMap(mapNum+1));
+			else {
+				label.setText("Thank you for playing!");
+				add(panel);
+				repaint();
+			}
 		}
 		catch(InterruptedException e) {
 			e.printStackTrace();
